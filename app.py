@@ -70,3 +70,5 @@ if submit:
     data = read_sql_query(response, 'Employee.db')
     response = get_gemini_reponse(question + ' \n' + str(data), prompt, 1)
     st.subheader(response)
+
+st.text('Developed by Keshav Tanwar with ❤️')
